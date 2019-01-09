@@ -4,10 +4,29 @@
        xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <bean id="zeroPoint" class="com.stackroute.spring.Point">
+        <property name="x" value="0"/>
+        <property name="y" value="0"/>
+    </bean>
+
+    <bean id="onePoint" class="com.stackroute.spring.Point">
+        <property name="x" value="-20"/>
+        <property name="y" value="0"/>
+    </bean>
+
+    <bean id="twoPoint" class="com.stackroute.spring.Point">
+        <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
+
     <bean id="triangle" class="com.stackroute.spring.Triangle">
         <!--<property name="type" value="equilateral"/>-->
         <!--<constructor-arg index="0" value="equilateral triangle"/>-->
-        <constructor-arg index="1"  value="20" />
+        <!--<constructor-arg index="1"  value="20" />-->
+        <property name="pointA" ref="zeroPoint"/>
+        <property name="pointB" ref="onePoint"/>
+        <property name="pointC" ref="twoPoint"/>
     </bean>
 
 </beans>
