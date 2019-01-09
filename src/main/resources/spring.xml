@@ -5,37 +5,27 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-    <bean id="zeroPoint" class="com.stackroute.spring.Point">
+    <bean id="pointA" class="com.stackroute.spring.Point">
         <property name="x" value="0"/>
         <property name="y" value="0"/>
     </bean>
 
-    <alias name="alias-of-triangle" alias="alias-alias-of-triangle"/>
+    <bean id="pointB" class="com.stackroute.spring.Point">
+        <property name="x" value="-20"/>
+        <property name="y" value="0"/>
+    </bean>
 
-    <bean id="triangle" class="com.stackroute.spring.Triangle" name="alias-of-triangle">
-        <!--<property name="height" value="20"/>-->
-        <!--<constructor-arg index="0" value="equilateral triangle"/>-->
-        <!--<constructor-arg index="1"  value="20" />-->
-        <property name="points">
-            <list>
-                <ref bean="zeroPoint"/>
-                <ref bean="onePoint"/>
-                <ref bean="twoPoint"/>
-            </list>
-        </property>
+    <bean id="pointC" class="com.stackroute.spring.Point">
+        <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
 
+    <bean id="triangle" class="com.stackroute.spring.Triangle" autowire="byName">
 
     </bean>
 
-            <bean id="onePoint" class="com.stackroute.spring.Point">
-                <property name="x" value="-20"/>
-                <property name="y" value="0"/>
-            </bean>
 
-            <bean id="twoPoint" class="com.stackroute.spring.Point">
-                <property name="x" value="20"/>
-                <property name="y" value="0"/>
-            </bean>
+
 
 
 </beans>
