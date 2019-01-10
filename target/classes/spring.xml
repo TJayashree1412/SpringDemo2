@@ -6,8 +6,8 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
     <bean id="zeroPoint" class="com.stackroute.spring.Point">
-        <property name="x" value="0"/>
-        <property name="y" value="0"/>
+        <property name="x" value="${pointA.pointX}"/>
+        <property name="y" value="${pointA.pointY}"/>
     </bean>
 
     <bean id="onePoint" class="com.stackroute.spring.Point">
@@ -26,6 +26,8 @@
         <property name="pointC" ref="twoPoint"/>
     </bean>
 
-    <bean class="com.stackroute.spring.DisplayNameBeanPostProcessor" />
-
+    <bean class="com.stackroute.spring.MyBeanFactoryPP"/>
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations" value="classpath:pointsconfig.properties"/>
+    </bean>
 </beans>
