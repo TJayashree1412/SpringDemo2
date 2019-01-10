@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans default-init-method="myInit" default-destroy-method="myDestroy" xmlns="http://www.springframework.org/schema/beans"
+<beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
-    <bean id="pointA" class="com.stackroute.spring.Point" >
+    <bean id="zeroPoint" class="com.stackroute.spring.Point">
         <property name="x" value="0"/>
         <property name="y" value="0"/>
     </bean>
 
-    <bean id="pointB" class="com.stackroute.spring.Point">
-        <property name="x" value="-20"/>
-        <property name="y" value="0"/>
+
+    <bean id="triangle" class="com.stackroute.spring.Triangle" >
+
+        <property name="pointA" ref="zeroPoint"/>
     </bean>
 
-    <bean id="pointC" class="com.stackroute.spring.Point">
-        <property name="x" value="20"/>
-        <property name="y" value="0"/>
+    <bean id="triangle1" class="com.stackroute.spring.Triangle" parent="triangle">
+
+        <property name="pointB" ref="onePoint"/>
     </bean>
 
-    <bean id="triangle" class="com.stackroute.spring.Triangle" autowire="byName">
+    <bean id="triangle2" class="com.stackroute.spring.Triangle" parent="triangle1">
 
+        <property name="pointC" ref="twoPoint"/>
     </bean>
+            <bean id="onePoint" class="com.stackroute.spring.Point">
+                <property name="x" value="-20"/>
+                <property name="y" value="0"/>
+            </bean>
 
-
-
+            <bean id="twoPoint" class="com.stackroute.spring.Point">
+                <property name="x" value="20"/>
+                <property name="y" value="0"/>
+            </bean>
 
 
 </beans>
