@@ -1,7 +1,7 @@
 package com.stackroute.spring;
 
 
-public class Triangle {
+public class Triangle implements Shape{
 
     private Point pointA;
     private Point pointB;
@@ -36,6 +36,7 @@ public class Triangle {
         this.pointC = pointC;
     }
     public void draw(){
+        System.out.println("Drawing a Triangle:");
         System.out.println("Point A=("+getPointA().getX()+","+getPointA().getY()+")");
         System.out.println("Point B=("+getPointB().getX()+","+getPointB().getY()+")");
         System.out.println("Point C=("+getPointC().getX()+","+getPointC().getY()+")");
