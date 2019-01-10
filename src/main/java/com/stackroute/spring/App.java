@@ -18,7 +18,7 @@ public class App
         //System.out.println( "Hello World!" );
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("spring.xml");
 
-        Triangle triangle=(Triangle)applicationContext.getBean("triangle2");
+        Triangle triangle=(Triangle)applicationContext.getBean("triangle");
         triangle.draw();
     }
 }

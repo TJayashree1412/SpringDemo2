@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535dd366-6ed1-4703-8fba-df650946dee7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/spring/DisplayNameBeanPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/spring/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/spring/Triangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
+              <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding>
                 <element signature="e#319#320#0" expanded="true" />
                 <element signature="e#372#373#0" expanded="true" />
@@ -83,11 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="308">
+              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/DisplayNameBeanPostProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +122,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/spring/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/spring/Point.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/spring/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/spring/DisplayNameBeanPostProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java" />
       </list>
     </option>
   </component>
@@ -123,7 +135,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="883" />
     <option name="y" value="27" />
     <option name="width" value="707" />
@@ -177,7 +189,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547094241972" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547095178333" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/SpringDemo" />
   </component>
   <component name="RecentsManager">
@@ -231,7 +243,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1533" height="875" extended-state="6" />
+    <frame x="883" y="27" width="707" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -239,7 +251,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.95427036" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.95310134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.3297587" />
@@ -247,7 +259,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.35142857" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.308311" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,6 +296,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/DisplayNameBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -303,20 +325,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="308">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding>
             <element signature="e#319#320#0" expanded="true" />
             <element signature="e#372#373#0" expanded="true" />
@@ -334,10 +353,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/spring/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="300">
+          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -10,30 +10,22 @@
         <property name="y" value="0"/>
     </bean>
 
+    <bean id="onePoint" class="com.stackroute.spring.Point">
+        <property name="x" value="-20"/>
+        <property name="y" value="0"/>
+    </bean>
+
+    <bean id="twoPoint" class="com.stackroute.spring.Point">
+        <property name="x" value="20"/>
+        <property name="y" value="0"/>
+    </bean>
 
     <bean id="triangle" class="com.stackroute.spring.Triangle" >
-
         <property name="pointA" ref="zeroPoint"/>
-    </bean>
-
-    <bean id="triangle1" class="com.stackroute.spring.Triangle" parent="triangle">
-
         <property name="pointB" ref="onePoint"/>
-    </bean>
-
-    <bean id="triangle2" class="com.stackroute.spring.Triangle" parent="triangle1">
-
         <property name="pointC" ref="twoPoint"/>
     </bean>
-            <bean id="onePoint" class="com.stackroute.spring.Point">
-                <property name="x" value="-20"/>
-                <property name="y" value="0"/>
-            </bean>
 
-            <bean id="twoPoint" class="com.stackroute.spring.Point">
-                <property name="x" value="20"/>
-                <property name="y" value="0"/>
-            </bean>
-
+    <bean class="com.stackroute.spring.DisplayNameBeanPostProcessor" />
 
 </beans>
