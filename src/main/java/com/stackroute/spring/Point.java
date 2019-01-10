@@ -3,6 +3,9 @@ package com.stackroute.spring;
 public class Point {
     private int x;
 
+    public Point(){
+        System.out.println("--point initialised--");
+    }
     public int getX() {
         return x;
     }
